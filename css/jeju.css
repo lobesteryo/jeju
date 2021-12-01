@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, p, ul, figure {
+    margin:0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+address {
+    font-style: none;
+}
+small {
+    font-size: 1em;
+}
+.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+/* 웹폰트 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*header*/
+#header {
+    height: 600px;
+    text-align: center;
+    color: #fff;
+    background: url(../images/jeju2.jpg) no-repeat center center /cover;
+}
+#hgroup {
+    padding-top: 120px;
+}
+#header hgroup h1 {
+    font-size: 100px;
+}
+#header hgroup h2 {
+    font-size: 45px;
+    font-weight: normal;
+}
+/* nav */
+#gnb {
+    overflow: hidden;
+    width: 1200px;
+    /* margin: -50px auto 0; */
+    /* margin: 0; position: relative; top: -50px; */
+    /* position: absolute; top: 550; left: 50%; margin-left: -600px; */
+    position: absolute; top: 550px; left: calc(50% - 600px);
+}
+#gnb ul li {
+    width: 25%; 
+    float: left;
+}
+#gnb ul li a {
+    display: block;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+#gnb li a:hover {
+    background-color: blue;
+    color: #000;
+}
+
+/* main */
+#content {
+    width: 1200px;
+    margin: 100px 0 auto 50px;
+}
+#content section h3 {
+    margin: 20px 0;
+}
+#content section figure {
+    margin-bottom: 20px;
+}
+
+/* footer */
+#footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+#footer p {
+    margin: 20px 0;
+}
